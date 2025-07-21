@@ -1,7 +1,4 @@
 # miniature-waffle
-# prompt: give me readme file text for this project
-
-
 ## Usage
 
 1.  **Ensure you have the `Copy of sonar data.csv` file** in the same directory as the script or update the file path in the script.
@@ -23,7 +20,7 @@ The script will perform the following steps:
     - The data is loaded into a pandas DataFrame.
     - `sonar_data.head()`, `sonar_data.shape`, `sonar_data.describe()`, `sonar_data[60].value_counts()`, and `sonar_data.groupby(60).mean()` are used for initial data understanding.
     - The features (`X`) are created by dropping the target column (column 60).
-    - The target variable (`Y`) is the column 60.
+    - The target variable (`Y`) is column 60.
 
 - **Training and Test Data:**
     - `train_test_split` is used to split the data into training (90%) and testing (10%) sets.
@@ -31,7 +28,7 @@ The script will perform the following steps:
     - `random_state=2` ensures reproducibility of the split.
 
 - **Model Training:**
-    - A `LogisticRegression` model is initialized.
+    - A `LogisticRegression` model is initialised.
     - The model is trained using the `fit()` method on the training data (`X_train`, `Y_train`).
 
 - **Model Evaluation:**
